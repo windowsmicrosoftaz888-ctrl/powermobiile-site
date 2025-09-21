@@ -129,9 +129,8 @@ body {
 .text-element p {
     font-size: 23px;
     color: #fff; /* متن خاکستری روشن */
-    font-family: Vazir, Tahoma, serif;
+    font-family: "Vazir-Bold", Tahoma, serif;
     margin-top: 150px;
-    font-family: "Vazir-Bold";
 }
 
 /* دکمه‌ها */
@@ -186,5 +185,6 @@ body {
     }
 
 }
+
 
 
