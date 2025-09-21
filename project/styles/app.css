@@ -131,6 +131,7 @@ body {
     color: #fff; /* متن خاکستری روشن */
     font-family: Vazir, Tahoma, serif;
     margin-top: 150px;
+    font-family: "Vazir-Bold";
 }
 
 /* دکمه‌ها */
@@ -185,4 +186,5 @@ body {
     }
 
 }
+
 
