@@ -1,0 +1,181 @@
+/* Reset و تنظیمات پایه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #000; /* پس زمینه سیاه */
+    color: #fff; /* متن سفید */
+    line-height: 1.6;
+    direction: rtl;
+}
+/* لودر */
+.loader-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10000;
+    margin: auto;
+    background: #000; /* پس زمینه سیاه */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk-circle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.sk-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sk-child:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #fff; /* دایره‌های سفید */
+    border-radius: 100%;
+    animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+
+.sk-circle1:before { animation-delay: -0.32s; }
+.sk-circle2:before { animation-delay: -0.16s; }
+.sk-circle3:before { animation-delay: -0.08s; }
+.sk-circle4:before { animation-delay: -0.24s; }
+.sk-circle5:before { animation-delay: -0.40s; }
+.sk-circle6:before { animation-delay: -0.56s; }
+.sk-circle7:before { animation-delay: -0.72s; }
+.sk-circle8:before { animation-delay: -0.88s; }
+.sk-circle9:before { animation-delay: -1.04s; }
+.sk-circle10:before { animation-delay: -1.20s; }
+.sk-circle11:before { animation-delay: -1.36s; }
+.sk-circle12:before { animation-delay: -1.52s; }
+
+@keyframes sk-circleBounceDelay {
+    0%, 80%, 100% {
+        transform: scale(0);
+    } 40% {
+        transform: scale(1);
+    }
+}
+
+/* کانتینر اصلی */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* باکس‌ها */
+.box {
+    background-color: #222; /* پس زمینه تیره */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* سایه سفید ملایم */
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* عناصر متنی */
+.text-element {
+    text-align: center;
+    width: 100%;
+}
+
+.text-element span {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff; /* متن سفید */
+    margin-top: 50px;
+}
+.text-element span {
+    margin-top: 100px;
+}
+.text-element p {
+    font-size: 23px;
+    color: #fff; /* متن خاکستری روشن */
+    font-family: Vazir, Tahoma, serif;
+    margin-top: 150px;
+}
+
+/* دکمه‌ها */
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #333; /* پس زمینه دکمه تیره */
+    color: #fff; /* متن سفید */
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #555; /* حاشیه خاکستری */
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #555; /* پس زمینه هنگام هاور */
+    color: #fff;
+}
+
+/* تصویر */
+.image-element {
+    width: 100%;
+    text-align: center;
+}
+
+.image-element img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%); /* تبدیل تصویر به سیاه و سفید */
+}
+
+/* رسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+    
+    .box {
+        min-width: 100%;
+    }
+    
+    .text-element h2 {
+        font-size: 24px;
+    }
+    
+    .text-element p {
+        font-size: 18px;
+    }
+}
