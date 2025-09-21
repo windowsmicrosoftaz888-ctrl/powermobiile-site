@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, Tahoma, sans-serif;
+    font-family: "Vazir-Bold", Tahoma, sans-serif;
     background-color: #000; /* پس زمینه سیاه */
     color: #fff; /* متن سفید */
     line-height: 1.6;
@@ -185,3 +185,4 @@ body {
     }
 
 }
+
