@@ -26,7 +26,7 @@ body {
     top: 0;
     z-index: 10000;
     margin: auto;
-    background: #fff; /* پس زمینه سیاه */
+    background: #000; /* پس زمینه سیاه */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,4 +259,5 @@ body {
         margin-top: 80px;
     }
 }
+
 
