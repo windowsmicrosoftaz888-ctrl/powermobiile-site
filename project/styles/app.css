@@ -2,7 +2,6 @@
     font-family: "Vazir-Bold";
     src: url("../font/woff2/Vazir-Bold.woff2") format("woff2");
 }
-
 /* Reset و تنظیمات پایه */
 * {
     margin: 0;
@@ -17,6 +16,7 @@ body {
     line-height: 1.6;
     direction: rtl;
 }
+
 /* لودر */
 .loader-container {
     position: fixed;
@@ -86,7 +86,6 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-
 /* کانتینر اصلی */
 .container {
     max-width: 1170px;
@@ -120,6 +119,60 @@ body {
     gap: 15px;
 }
 
+/* استایل برای دکمه‌ها با آیکون */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #333; /* پس زمینه دکمه تیره */
+    color: #fff; /* متن سفید */
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #555; /* حاشیه خاکستری */
+    transition: all 0.3s ease;
+    font-weight: bold;
+    gap: 10px; /* فاصله بین آیکون و متن */
+}
+
+.button:hover {
+    background-color: #555; /* پس زمینه هنگام هاور */
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* استایل آیکون‌ها */
+.button i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+/* آیکون اینستاگرام - رنگ مخصوص */
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* آیکون مپ - رنگ مخصوص */
+.fa-map-marker-alt {
+    color: #ff4444; /* قرمز */
+}
+
+/* آیکون موبایل - رنگ مخصوص */
+.fa-mobile-alt {
+    color: #4CAF50; /* سبز */
+}
+
+/* آیکون تلفن ثابت - رنگ مخصوص */
+.fa-phone {
+    color: #2196F3; /* آبی */
+}
+
 /* عناصر متنی */
 .text-element {
     text-align: center;
@@ -132,34 +185,17 @@ body {
     color: #fff; /* متن سفید */
     margin-top: 50px;
 }
+
 .text-element span {
     margin-top: 100px;
 }
+
 .text-element p {
     font-size: 23px;
     color: #fff; /* متن خاکستری روشن */
     font-family: "Vazir-Bold", Tahoma, serif;
     margin-top: 150px;
-}
-
-/* دکمه‌ها */
-.button {
-    display: block;
-    width: 100%;
-    padding: 12px 20px;
-    background-color: #333; /* پس زمینه دکمه تیره */
-    color: #fff; /* متن سفید */
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #555; /* حاشیه خاکستری */
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: #555; /* پس زمینه هنگام هاور */
-    color: #fff;
+    line-height: 1.8;
 }
 
 /* تصویر */
@@ -191,10 +227,35 @@ body {
     
     .text-element p {
         font-size: 18px;
+        margin-top: 100px;
     }
-
+    
+    .button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .button i {
+        font-size: 16px;
+    }
 }
 
-
-
-
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .box {
+        padding: 15px;
+    }
+    
+    .text-element span {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+    
+    .text-element p {
+        font-size: 16px;
+        margin-top: 80px;
+    }
+}
