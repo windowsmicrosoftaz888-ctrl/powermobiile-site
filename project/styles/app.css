@@ -2,7 +2,7 @@
     font-family: "Vazir-Bold";
     src: url("../font/woff2/Vazir-Bold.woff2") format("woff2");
 }
-/* Reset و تنظیمات پایه */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +11,8 @@
 
 body {
     font-family: "Vazir-Bold", Tahoma, sans-serif;
-    background-color: #000; /* پس زمینه سیاه */
-    color: #fff; /* متن سفید */
+    background-color: #000; 
+    color: #fff; 
     line-height: 1.6;
     direction: rtl;
 }
@@ -26,17 +26,17 @@ body {
     top: 0;
     z-index: 10000;
     margin: auto;
-    background: #000; /* پس زمینه سیاه */
+    background: #000; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sk-circle {
-    width: 100px; /* بزرگ‌تر شد */
+    width: 100px; 
     height: 100px;
     position: relative;
-    animation: rotate 2s linear infinite; /* چرخش کل مجموعه دایره‌ها */
+    animation: rotate 2s linear infinite; 
 }
 
 .sk-child {
@@ -51,9 +51,9 @@ body {
     content: '';
     display: block;
     margin: 0 auto;
-    width: 20%; /* دایره‌ها بزرگ‌تر */
+    width: 20%; 
     height: 20%;
-    background-color: #fff; /* دایره‌های سفید */
+    background-color: #fff; 
     border-radius: 100%;
     animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
 }
@@ -81,13 +81,11 @@ body {
     }
 }
 
-/* چرخش کل دایره‌ها */
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* کانتینر اصلی */
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -101,16 +99,15 @@ body {
     gap: 20px;
 }
 
-/* باکس‌ها */
 .box {
-    background-color: #222; /* پس زمینه تیره */
+    background-color: #222; 
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     min-height: 200px;
     flex: 1;
     min-width: 300px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* سایه سفید ملایم */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
 }
 
 .box-content {
@@ -120,38 +117,35 @@ body {
     gap: 15px;
 }
 
-/* استایل برای دکمه‌ها با آیکون */
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 12px 20px;
-    background-color: #333; /* پس زمینه دکمه تیره */
-    color: #fff; /* متن سفید */
+    background-color: #333; 
+    color: #fff; 
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #555; /* حاشیه خاکستری */
+    border: 1px solid #555; 
     transition: all 0.3s ease;
     font-weight: bold;
-    gap: 10px; /* فاصله بین آیکون و متن */
+    gap: 10px; 
 }
 
 .button:hover {
-    background-color: #555; /* پس زمینه هنگام هاور */
+    background-color: #555; 
     color: #fff;
     transform: translateY(-2px);
 }
 
-/* استایل آیکون‌ها */
 .button i {
     font-size: 18px;
     width: 20px;
     text-align: center;
 }
 
-/* آیکون اینستاگرام - رنگ مخصوص */
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
@@ -159,22 +153,18 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* آیکون مپ - رنگ مخصوص */
 .fa-map-marker-alt {
-    color: #ff4444; /* قرمز */
+    color: #ff4444; 
 }
 
-/* آیکون موبایل - رنگ مخصوص */
 .fa-mobile-alt {
-    color: #4CAF50; /* سبز */
+    color: #4CAF50; 
 }
 
-/* آیکون تلفن ثابت - رنگ مخصوص */
 .fa-phone {
-    color: #2196F3; /* آبی */
+    color: #2196F3; 
 }
 
-/* عناصر متنی */
 .text-element {
     text-align: center;
     width: 100%;
@@ -183,7 +173,7 @@ body {
 .text-element span {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #fff; /* متن سفید */
+    color: #fff; 
     margin-top: 50px;
 }
 
@@ -193,13 +183,12 @@ body {
 
 .text-element p {
     font-size: 23px;
-    color: #fff; /* متن خاکستری روشن */
+    color: #fff; 
     font-family: "Vazir-Bold", Tahoma, serif;
     margin-top: 150px;
     line-height: 1.8;
 }
 
-/* تصویر */
 .image-element {
     width: 100%;
     text-align: center;
@@ -209,10 +198,9 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    filter: grayscale(100%); /* تبدیل تصویر به سیاه و سفید */
+    filter: grayscale(100%); 
 }
 
-/* رسپانسیو برای موبایل */
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
@@ -260,6 +248,7 @@ body {
         margin-top: 80px;
     }
 }
+
 
 
 
