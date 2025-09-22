@@ -53,7 +53,7 @@ body {
     margin: 0 auto;
     width: 20%; /* دایره‌ها بزرگ‌تر */
     height: 20%;
-    background-color: #red; /* دایره‌های سفید */
+    background-color: #fff; /* دایره‌های سفید */
     border-radius: 100%;
     animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
 }
@@ -260,6 +260,7 @@ body {
         margin-top: 80px;
     }
 }
+
 
 
 
